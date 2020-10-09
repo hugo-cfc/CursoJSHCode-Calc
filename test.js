@@ -1,6 +1,6 @@
-function isOperator(value) {
-    return (['+', '-', '*', '%', '/'].some(item => (item === value)))
-}
+var fatorial = function fac(n) {
+    console.log(n)
+    return n < 2 ? 1 : n * fac(n-1)
+};
 
-console.log(isOperator('+'))
-console.log(!!'+')
+console.log(fatorial(3));
